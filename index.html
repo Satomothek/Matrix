@@ -6,11 +6,66 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="nopal.css">
     <title>Aljabar</title>
+    <style>
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 0.5rem 32px;
+            background: linear-gradient(to bottom, #3566c2 0%, #02266a 100%);
+            box-shadow: 0 2px 12px #4888ff22;
+            display: flex;
+            align-items: center;
+            z-index: 100;
+            height: 56px;
+        }
+
+        .logo {
+            font-size: 1.7rem;
+            color: #4888ff;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-align: left;
+            flex: 0 0 auto;
+            text-decoration: none;
+            transition: 0.3s;
+            margin: 0;
+            padding: 0;
+            display: block;
+            line-height: 1;
+        }
+
+        nav {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            font-size: 1.1rem;
+            color: white;
+            font-weight: 500;
+            text-decoration: none;
+            transition: 0.3s ease;
+            border-bottom: 3px solid transparent;
+            padding: 0.2rem 0.5rem;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #4888ff;
+            border-bottom: 3px solid #4888ff;
+        }
+        .home, .container-wrapper, .container {
+            margin-top: 80px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <a href="index.html" class="logo">Aljabar</a>
-        
         <nav>
             <a href="index.html" class="active">Home</a>
             <a href="calc.html">Kalkulator</a>
