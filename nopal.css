@@ -20,19 +20,19 @@ body{
     color: white;
 }
 
-header{
-    margin-top: 20px;
+header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1rem 9%;
-    background-color: transparent;
-    filter: drop-shadow(10px);
+
+    padding: 0.5rem 32px;
+    background: linear-gradient(to bottom, #3566c2 0%, #02266a 100%);
+    box-shadow: 0 2px 12px #4888ff22;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     z-index: 100;
+    height: 80px;
 }
 
 .logo{
