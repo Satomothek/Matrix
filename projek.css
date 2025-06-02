@@ -1,0 +1,229 @@
+body {
+    background: #02266a;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 3rem;
+    color: #4888ff;
+    font-weight: 800;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav a{
+    position: relative;
+    right: 23%;
+    font-size: 1.1rem;
+    color: white;
+    margin-left: 2rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active{
+    color: #4888ff;
+    border-bottom: #4888ff;
+}
+
+@media(max-width:995px){
+    nav{
+        position: absolute;
+        display: flex;
+        top: 0;
+        right: 0;
+        width: 40%;
+        border-left: 4px solid #4888ff;
+        border-bottom: 4px solid #4888ff;
+        border-bottom-left-radius: 2.5rem;
+        padding: 1rem solid;
+        background-color: #02266a;
+        border-top: 0.4rem solid #4888ff;
+    }
+
+nav.active{
+    display: block;
+}
+
+nav a{
+    display: block;
+    font-size: 1rem;
+    margin: 3rem 0;
+}
+
+nav a:hover,
+nav a.active{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-bottom: 0.5rem solid #4888ff;
+}
+}
+
+.container {
+    max-width: 760px;
+    margin: 120px auto;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0 2px 16px #4888ff;
+    padding: 30px 50px;
+}
+h1, h2 {
+    text-align: center;
+    color: #ffffff;
+}
+.matrix-inputs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    gap: 16px;
+}
+.matrix-controls {
+    text-align: center;
+    margin-bottom: 6px;
+}
+.matrix-controls button {
+    margin: 0 2px 4px 2px;
+    padding: 4px 7px;
+    font-size: 13px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.matrix-controls span,
+.matrix-controls > span,
+label[for="manualExpr"] {
+    color: #fff !important;
+    font-size: 1.1rem;
+}
+
+span {
+    color: #fff !important;
+}
+
+label {
+    color: #fff !important;
+}
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+td {
+    border: 1px solid #aaa;
+    padding: 0;
+}
+input[type="number"] {
+    width: 50px;
+    height: 28px;
+    border: none;
+    text-align: center;
+    font-size: 15px;
+    background: #f7f7f7;
+}
+.operations {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.operations button {
+    padding: 10px;
+    background-color: #d7a5ec4c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s;
+}
+.operations button:hover {
+    background-color: #ffffffa2;
+}
+.operations-a, .operations-b {
+    margin-top: 32px;
+}
+.result {
+    background: transparent;
+    border-radius: 6px;
+    padding: 20px;
+    min-height: 60px;
+    font-size: 17px;
+    box-shadow: 0 1px 9px #4888ff;
+    overflow-x: auto;
+    max-width: 100%;
+}
+pre {
+    margin: 0;
+    font-family: "Consolas", monospace;
+}
+pre#result {
+    text-align: center;
+    color: #ffffff;
+    white-space: pre;
+    overflow-x: auto;
+    max-width: 100%;
+    display: block;
+}
+pre, 
+#result,
+.result h2,
+#result-details pre,
+#result-details span,
+.calculation-steps,
+.matrix-step,
+.determinant-step,
+.calculation-steps *,
+.matrix-step *,
+.determinant-step *,
+.step-details,
+.step-details *,
+.matrix-operation-description,
+.calculation-method-name,
+.method-description {
+    color: #fff !important;
+    font-family: "Consolas", monospace;
+}
+.calculation-steps > *,
+.matrix-step > *,
+.determinant-step > *,
+#result-details > * {
+    color: #fff !important;
+}
+.arrow-symbol,
+.method-symbol,
+.step-symbol {
+    color: #fff !important;
+}
+.calculation-steps,
+.matrix-step,
+.determinant-step,
+#result-details {
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
